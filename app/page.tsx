@@ -1,6 +1,7 @@
 import Image from "next/image";
+import * as React from "react";
 
-export default function Home() {
+function Home_2() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
@@ -109,5 +110,141 @@ export default function Home() {
         </a>
       </div>
     </main>
+  );
+}
+
+
+
+export default function Home() {
+  return (
+    <div className="flex z-10 flex-col w-full max-md:max-w-full">
+      <div className="flex flex-col justify-center px-16 py-5 w-full text-xl font-bold tracking-normal text-center text-black whitespace-nowrap bg-neutral-100 max-md:px-5 max-md:max-w-full">
+        <div className="flex gap-5 justify-between mr-12 ml-12 max-md:flex-wrap max-md:mr-2.5 max-md:max-w-full">
+          
+          <div className="flex gap-5 justify-between max-md:flex-wrap max-md:max-w-full">
+            <img
+              loading="lazy"
+              src="/Calaido_Top.svg"
+              className="shrink-0 max-w-full aspect-[4.55] w-[106px]"
+            />
+
+            <div className="flex gap-5 justify-between self-start mt-1.5">
+              <div>spaces</div>
+              <div>pages</div>
+              <div>team</div>
+            </div>
+          </div>
+          <div className="my-auto">contact</div>
+        </div>
+      </div>
+
+      
+      
+      <div className="mt-5 w-full max-md:mt-10 max-md:max-w-full">
+        
+        <div className="flex gap-[-10 px] max-md:flex-col max-md:gap-0">
+          <div className="flex flex-col w-[30%] max-md:ml-0 max-md:w-full">
+            <div className="flex flex-col grow max-md:max-w-full">
+
+            
+              <div className="flex flex-col pl-20 max-md:pl-3 max-md:max-w-full">
+                <div className="flex justify-center items-end self-end pt-60 pr-6 pb-20 pl-13 max-w-full text-7xl italic font-light text-right text-black bg-blue-200 rounded-full aspect-square w-[356px] h-[356px]max-md:pt-10 max-md:pl-5 max-md:text-4xl">
+                </div>
+                <div className="flex overflow-hidden relative z-10 flex-col items-end pt-20 pr-3.5 pb-3.5 pl-16 mt-[-200px] max-w-full text-base font-bold tracking-normal text-justify text-white whitespace-nowrap aspect-[0.77] w-[356px] max-md:pl-5 max-md:mt-0">
+                  <img
+                    loading="lazy"
+                    src="/eye.png"
+                    className="object-cover absolute inset-0 size-full"
+                  />
+                  // mt is the position of the text
+                  <div className="relative justify-center p-2 mt-40 rounded-2xl backdrop-blur-[2px] bg-zinc-400 bg-opacity-30 max-md:mt-10">
+                    {" "}
+                    Experience every artwork
+                  </div>
+                </div>
+              </div>
+              <div className="flex justify-center items-center px-12 mt-[340px] w-full bg-orange-700 rounded-full aspect-square max-md:px-5 max-md:mt-10"/>
+            </div>
+          </div>
+
+          <div className="flex flex-col ml-5 w-[70%] max-md:ml-0 max-md:w-full">
+            <div className="flex flex-col mt-1 max-md:mt-10 max-md:max-w-full">
+              <div className="max-md:max-w-full">
+                <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+                  <div className="flex flex-col w-[50%] max-md:ml-0 max-md:w-full">
+                    <div className="flex flex-col mt-52 text-black max-md:mt-10 max-md:max-w-full">
+                      <div className="self-start text-7xl italic font-light text-left max-md:text-4xl">
+                      “
+                      </div>
+                      <div className="text-3xl italic tracking-tight leading-10 mt-[-35px] max-md:max-w-full">
+                        We created the first online art platform that is
+                        engaging, for everyone to experience art
+                      </div>
+                      <div className="self-end text-7xl italic font-light text-right max-md:text-4xl">
+                        ”
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
+                    <div className="flex overflow-hidden relative flex-col items-end pt-20 pb-2.5 pl-6 text-base mt-[40px] font-bold tracking-normal text-justify text-white whitespace-nowrap aspect-[0.71] max-md:mt-10">
+                      <img
+                        loading="lazy"
+                        src="/connect_artists.png"
+                        className="object-cover absolute inset-0 size-full"
+                      />
+                      <div className="relative justify-center p-2 mt-10 rounded-2xl backdrop-blur-[1px] bg-zinc-400 bg-opacity-20 max-md:mt-30">
+                        Connect with artists
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="self-end mt-12 max-w-full w-[1073px] max-md:mt-10 max-md:mr-2.5">
+                <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+                  <div className="flex flex-col w-[59%] max-md:ml-0 max-md:w-full">
+                    <div className="flex flex-col items-center text-base font-bold tracking-normal text-justify whitespace-nowrap max-md:mt-10 max-md:max-w-full">
+                      <div className="flex overflow-hidden relative flex-col items-start self-stretch pt-2 pr-16 pb-20 pl-2.5 w-full text-white min-h-[304px] max-md:pr-5 max-md:max-w-full">
+                        <img
+                          loading="lazy"
+                          src="/tour.png"
+                          className="object-cover absolute inset-0 size-full"
+                        />
+                        <div className="relative justify-center p-2 mb-32 rounded-2xl backdrop-blur-[2px] bg-zinc-400 bg-opacity-30 max-md:mb-10">
+                          Take real tours
+                        </div>
+                      </div>
+                      <div className="mt-20 text-neutral-400 max-md:mt-10">
+                        Learn more
+                      </div>
+                      <img
+                        loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/6cda21258224cef7d23bd967ee3230c5e02800f39d989160f3cb84d3128341b6?"
+                        className="mt-4 w-5 aspect-[2.86] fill-neutral-400"
+                      />
+                      <img
+                        loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/6cda21258224cef7d23bd967ee3230c5e02800f39d989160f3cb84d3128341b6?"
+                        className="w-5 aspect-[2.86] fill-neutral-400"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex flex-col ml-5 w-[41%] max-md:ml-0 max-md:w-full">
+                    <div className="flex justify-center items-center px-12 mt-24 w-full bg-red-400 rounded-full aspect-square max-md:px-5 max-md:mt-10">
+                      <img
+                        loading="lazy"
+                        src="/Vector_Calaido.svg"
+                        className="mt-[-15px]  aspect-[3.23] fill-white w-[290px] max-md:mt-10"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
